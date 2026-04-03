@@ -1,0 +1,86 @@
+# =============================================
+# ROS 2 + colcon build artifacts
+# =============================================
+build/
+install/
+log/
+
+# These are the three main folders created by `colcon build`
+# Never commit them ? they are large and can be regenerated anytime
+
+# =============================================
+# Generated files & temporary folders
+# =============================================
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# CMake and build intermediates
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# ROS 2 specific generated files
+*.egg-info/
+*.msg
+*.srv
+*.action
+# (Only ignore generated ones if you have msg/srv/action definitions)
+
+# =============================================
+# IDE and Editor files
+# =============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# VS Code ROS 2 extensions
+.colcon/
+.ros/
+
+# =============================================
+# Logs and temporary files
+# =============================================
+*.log
+*.bag
+*.bag.active
+*.db3
+rosbag2_*/
+
+# Test results
+test_results/
+**/pytest_cache/
+
+# =============================================
+# Python & dependency related (common in ROS 2)
+# =============================================
+*.egg
+*.eggs/
+dist/
+build/          # already covered above
+*.so
+*.dylib
+*.dll
+
+# =============================================
+# Misc
+# =============================================
+# Ignore colcon cache
+.colcon/
+
+# Ignore any hidden files you don't want
+.*.swp
+
+# If you use rosdep or other tools that generate files
+.ros/
